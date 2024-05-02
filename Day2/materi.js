@@ -98,7 +98,7 @@ const age = 20;
 // // rumus =>>>>> kondisi ? "true" : "false"
 // console.log(str === "javascript" ? "Javascript" : "Not Javascript");
 
-// ====================================================
+// =================================================================================
 // LOOP STATEMENT
 // statement 1 : menginisialisasi variable dari looping itu sendiri
 // statement 1 : mendifine kondisi dari looping tersebut
@@ -109,7 +109,119 @@ const age = 20;
 //   console.log("hello world");
 // }
 
-// WHILE LOOP ===================================
+// WHILE LOOP ======================================================================
+
+/*
+      Alur Proses While Loop
+
+      1. Membuat variabel dengan nilai awal, digunakan sebagai acuan Loop (init)
+      2. Mengevaluasi condition (condition)
+          a. condition : true, memproses taks yang ada
+          b. condition : false, keluar dari block Loop
+      3. Setelah menyelesaikan task yang ada di dalam block Loop, memodifikasi nilai pada variabel init (modification)
+      4. Kembali ke langkah 2
+*/
+
+// Init
+// let number = 1;
+// // Condition
+// while (number <= 5) {
+//   // task
+//   console.log(`Number : ${number}`);
+
+//   number++;
+// }
+// console.log("Selesai Loop");
+
+/////////////
+// Dua Langkah
+/////////////
+
+// Membuat variabel init
+// let number = 1;
+// // Mengevaluasi conditon
+// while (number <= 10) {
+//   // Menampilkan informasi pada terminal / console
+//   console.log(`Number : ${number}`);
+
+//   // Menjumlahkan 'number' dengan dua
+//   number += 2;
+
+//   // Kembali mengevaluasi condition
+// }
+// // Dijalankan setelah keluar dari Loop
+// console.log("Selesai Loop");
+
+//////////////////////////
+// Menampilkan nilai Genap
+/////////////////////////
+
+// nilai genap adalah nilai yang 'habis' dibagi dua.
+// jika di modulus dua, hasilnya adalah nol
+
+// init
+// var number = 0;
+// // condition
+// while (number <= 10) {
+//   // Evaluasi nilai, apakah merupakan bilangan genap
+//   // jika setelah dimoduluskan 2 menghasilkan nol, maka nilai tsb termasuk bilangan genap
+//   if (number % 2 == 0) {
+//     // Menampilkan bilangan genap pada console / terminal
+//     console.log(`${number} adalah bilangan genap`);
+//   }
+//   // modification
+//   // Menjumlah 'number' dengan satu
+//   number++;
+// }
+
+// // Dijalankan setelah keluar dari loop
+// console.log("Selesai Loop");
+
+//////////////////////////
+// Menampilkan nilai Ganjil
+/////////////////////////
+
+// nilai ganjil adalah nilai yang sisa satu saat dibagi dua.
+// jika di modulus dua, hasilnya adalah satu
+
+// init
+// var number = 0;
+// // condition
+// while (number <= 10) {
+//   // Evaluasi nilai, apakah merupakan bilangan genap
+//   // jika setelah dimoduluskan 2 menghasilkan nol, maka nilai tsb termasuk bilangan genap
+//   if (number % 2 == 1) {
+//     // Menampilkan bilangan genap pada console / terminal
+//     console.log(`${number} adalah bilangan ganjil`);
+//   }
+//   // modification
+//   // Menjumlah 'number' dengan satu
+//   number++;
+// }
+
+// // Dijalankan setelah keluar dari loop
+// console.log("Selesai Loop");
+
+/////////////////////////////////////
+// Menampilkan nilai Ganjil dan Genap
+/////////////////////////////////////
+
+// Membuat variabel acuan (init)
+var number = 1;
+// Mengevaluasi condition (condition)
+while (number <= 5) {
+  // Jika menghasilkan 1 setelah dimodulus 2
+  if (number % 2 == 1) {
+    console.log(`${number} adalah ganjil`);
+    // Jika menghasilkan 0 setelah dimodulus 2
+  } else {
+    console.log(`${number} adalah genap`);
+  }
+  // Menambahkan satu nilai terhadap nilai yang disimpan di variabel number
+  number++;
+}
+// // Dijalankan setelah keluar dari loop
+// console.log("Selesai Loop");
 
 // let i = 1;
 
@@ -118,7 +230,7 @@ const age = 20;
 //   i++;
 // }
 
-// DO WHILE LOOP =================================
+// DO WHILE LOOP ====================================================================
 
 // let count = 6;
 // do {
@@ -140,9 +252,9 @@ const age = 20;
 
 // CONTINUE =======================================
 // melakukan skip pada lopping
-for (let i = 1; i <= 5; i++) {
-  if (i === 3 || i === 4) {
-    continue;
-  }
-  console.log("iterasi : " + i);
-}
+// for (let i = 1; i <= 5; i++) {
+//   if (i === 3 || i === 4) {
+//     continue;
+//   }
+//   console.log("iterasi : " + i);
+// }
