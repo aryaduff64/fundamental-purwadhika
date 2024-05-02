@@ -179,11 +179,14 @@ if (typeof celsius === "number") {
 }
 
 // 6.
-// print the first N fibonacci numbers
+//////////////////////////////////////
+// Mencetak N bilangan fibonacci
+//////////////////////////////////////
 
 {
   // Variable
   let n = 15;
+  // Array
   let fibonacci = [1, 1];
 
   // for Loop

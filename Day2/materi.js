@@ -104,6 +104,65 @@ const age = 20;
 // statement 1 : mendifine kondisi dari looping tersebut
 // statement 1 : kode yang di eksekusi di akhir setiap iterasi
 
+///////////////
+// For Loop
+//////////////
+
+/*
+    1. Membuat variabel sebagai acuan (init)
+    2. Mengevaluasi condition
+        a. true : menjalankan task (Langkah - 3)
+        b. false : keluar dari loop
+    3. Menjalankan task
+    4. Menjalankan modification, kembali ke Langka - 2
+*/
+
+// init, condition, task, modification
+
+// for(init; condition; modification) {
+//   task
+// }
+
+///////////////////////////
+// Menampilkan angka 1 - 5
+//////////////////////////
+
+// for (var i = 1; i <= 5; i++) {
+//   console.log(`Number : ${i}`);
+// }
+
+///////////////////////////
+// Menampilkan Angka Genap
+///////////////////////////
+
+// for (var i = 3; i <= 10; i++) {
+//   if (i % 2 == 0) {
+//     console.log(`${i} adalah genap`);
+//   }
+// }
+
+///////////////////////////
+// Menampilkan Angka Ganjil
+///////////////////////////
+
+// for (var i = 3; i <= 10; i++) {
+//   if (i % 2 == 1) {
+//     console.log(`${i} adalah ganjil`);
+//   }
+// }
+
+/////////////////////////////////////
+// Menampilkan Angka Ganjil dan Genap
+////////////////////////////////////
+
+// for (var i = 2; i <= 10; i++) {
+//   if (i % 2 == 1) {
+//     console.log(`${i} adalah ganjil`);
+//   } else {
+//     console.log(`${i} adalah genap`);
+//   }
+// }
+
 // melakukan 3 kali perulangan
 // for (let i = 0; i < 3; i++) {
 //   console.log("hello world");
@@ -207,19 +266,19 @@ const age = 20;
 /////////////////////////////////////
 
 // Membuat variabel acuan (init)
-var number = 1;
-// Mengevaluasi condition (condition)
-while (number <= 5) {
-  // Jika menghasilkan 1 setelah dimodulus 2
-  if (number % 2 == 1) {
-    console.log(`${number} adalah ganjil`);
-    // Jika menghasilkan 0 setelah dimodulus 2
-  } else {
-    console.log(`${number} adalah genap`);
-  }
-  // Menambahkan satu nilai terhadap nilai yang disimpan di variabel number
-  number++;
-}
+// var number = 1;
+// // Mengevaluasi condition (condition)
+// while (number <= 5) {
+//   // Jika menghasilkan 1 setelah dimodulus 2
+//   if (number % 2 == 1) {
+//     console.log(`${number} adalah ganjil`);
+//     // Jika menghasilkan 0 setelah dimodulus 2
+//   } else {
+//     console.log(`${number} adalah genap`);
+//   }
+//   // Menambahkan satu nilai terhadap nilai yang disimpan di variabel number
+//   number++;
+// }
 // // Dijalankan setelah keluar dari loop
 // console.log("Selesai Loop");
 
@@ -232,6 +291,91 @@ while (number <= 5) {
 
 // DO WHILE LOOP ====================================================================
 
+/*
+    Alur Proses While (condition first)
+
+    1. Membuat variabel init
+    2. Evaluasi condition
+        a. condition : true, menjalankan task, menjalankan modification
+        b. condition : false, keluar dari loop
+    3. Kembali ke step 2
+*/
+
+/*
+    Alur Proses DO WHILE (task first)
+
+    1. Membuat variabel init
+    2. Menjalankan task, menjalankan modification
+    3. Evaluasi condition
+        a. condition : true, kembali ke step 2
+        b. condition : false, keluar dari block do while
+*/
+
+/*
+    Syntax
+    do {
+          task
+          
+    } while (condition)
+*/
+
+///////////////////////////////////
+// Menampilkan angka 1 - 5 DO WHILE
+//////////////////////////////////
+
+// Membuat variabel init (init)
+// var number = 1;
+// // Menjalankan task
+// do {
+//   // Menampilkan nilai number
+//   console.log(`DO WHILE : ${number}`);
+
+//   // Menjumlahkan nilai number dengan 1
+//   number++;
+
+//   // Evaluasi condition
+// } while (number <= 5);
+
+// console.log("Selesai DO WHILE");
+
+///////////////////////////////////
+// Menampilkan angka Ganjil dan Genap
+//////////////////////////////////
+
+// Init
+// var number = 3;
+
+// do {
+//   // Evaluasi apakah number merupakan bilangan genap
+//   if (number % 2 == 0) {
+//     // Jika number bilangan genap
+//     console.log(`${number} adalah GENAP`);
+//   } else {
+//     // Jika number adalah bilangan ganjil
+//     console.log(`${number} adalah GANJIL`);
+//   }
+
+//   // Modification, menambah nilai pada number dengan satu nilai
+//   number++;
+//   //Evaluasi condition, untuk menentukan apakah sebuah task akan dikerjakan ulang
+// } while (number <= 10);
+
+/////////////////
+// Infinite Loop
+////////////////
+
+// init
+// var number = 7;
+
+// do {
+//   // task
+//   console.log(`${number}`);
+//   // modification
+//   number++;
+
+//   // condition
+// } while (number >= 5);
+
 // let count = 6;
 // do {
 //   console.log("ini iterasi ke : " + count);
@@ -240,6 +384,44 @@ while (number <= 5) {
 
 // BREAK =======================================
 // menghentikan looping
+///////////////////////////////////
+// BREAK : Menghentikan proses loop
+///////////////////////////////////
+
+///////////////
+// Print 1 - 3
+///////////////
+
+// for (let i = 1; i <= 5; i++) {
+
+//   // Jika nilai sama dengan 4
+//   if (i == 4) {
+//     // Menghentikan proses Loop
+//     break;
+//   }
+
+//   // Tampilkan value pada variabel i
+//   console.log(`Loop : ${i}`);
+// }
+
+/////////////////////////////////////////////////////
+// Mencari angka random (0 - 99) yang dapati dibagi 5
+/////////////////////////////////////////////////////
+
+// infinite Loop : Loop yang memiliki condition selalu true
+
+// while (true) {
+//   // Mendapatkan angka random 0 - 99
+//   let rand = Math.floor(Math.random() * 100);
+//   // Menampilkan angka random
+//   console.log(rand);
+//   // Jika angka random dapat dibagi lima, maka hentikan proses
+//   if (rand % 5 == 0) {
+//     // Hentikan proses Loop
+//     break;
+//   }
+// }
+
 // let sum = 0;
 
 // while (true) {
@@ -251,7 +433,28 @@ while (number <= 5) {
 // }
 
 // CONTINUE =======================================
-// melakukan skip pada lopping
+// Melakukan skip pada lopping
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+// CONTINUE : Mengabaikan semua proses yang ada setelah keyword ini dan Lanjut ke Loop berikutnya
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////
+// Print 1 - 10. Lewati angka yang habis dibagi 3
+/////////////////////////////////////////////////
+
+// Loop sebanyak 10 kali
+// for (let i = 1; i <= 10; i++) {
+//   // Evaluasi nilai i, jika habis dibagi 3
+//   if (i % 3 == 0) {
+//     // skip ke Loop berikutnya
+//     continue;
+//   }
+
+//   // Menampilkan nilai i pada console
+//   console.log(`Print : ${i}`);
+// }
+
 // for (let i = 1; i <= 5; i++) {
 //   if (i === 3 || i === 4) {
 //     continue;
