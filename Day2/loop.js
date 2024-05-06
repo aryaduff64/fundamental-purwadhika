@@ -327,7 +327,7 @@
     FizzBuzz akan muncul saat suatu angka dapat dibagi 15.
 */
 
-var number = 45;
+var number = 15;
 
 for (var i = 1; i <= number; i++) {
   if (i % 15 == 0) {

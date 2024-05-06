@@ -8,7 +8,7 @@
 
 // ELSE STATEMENT ==============================
 // backup plan dari if statement
-const age = 20;
+// const age = 20;
 
 // if (age >= 17) {
 //   console.log("ini di dalam if statement");
